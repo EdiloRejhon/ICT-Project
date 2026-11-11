@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Service - NEMSU ICT Request System</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // Initialize EmailJS with placeholder public key
+          emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+      })();
+  </script>
+</head>
+<body class="bg-background" style="display:flex; justify-content:center; align-items:center; min-height:100vh;">
+  <div class="fade-in" style="width:100%; padding:2rem;">
+    <div class="card" style="max-width: 500px; margin: 0 auto; padding: 2rem;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h1 style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">NEMSU ICT Services</h1>
+        <p style="color: var(--muted-foreground); margin-top: 0.5rem;">Client's Verification & Services Rendered</p>
+      </div>
+
+      <div id="rate-content">
+        <div style="text-align:center; padding:2rem;">
+          Loading request details...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/supabase.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/rate.js"></script>
+</body>
+</html>

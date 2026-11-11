@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEMSU ICT Services · Submit a Request</title>
+  <meta name="description" content="Submit an ICT service request to the NEMSU ICT Office. No account required." />
+  <meta property="og:title" content="NEMSU ICT Services · Submit a Request" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="nemsu-logo.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Background -->
+  <div class="public-bg" aria-hidden="true"></div>
+  <div class="public-bg-overlay" aria-hidden="true"></div>
+
+  <div class="public-layout">
+    <!-- Header -->
+    <header class="public-header">
+      <div class="public-brand">
+        <img src="nemsu-logo.ico" alt="NEMSU seal" onerror="this.style.background='rgba(255,255,255,0.3)';this.style.borderRadius='50%'" />
+        <div style="color: #ffffff;">
+          <div class="public-brand-label" style="color: rgba(255, 255, 255, 0.9);">North Eastern Mindanao State University</div>
+          <div class="public-brand-name">ICT Services</div>
+        </div>
+      </div>
+      <a href="auth.html" class="btn btn-secondary btn-icon" title="Admin / Staff Sign In" style="border-radius:50%; width:2.5rem; height:2.5rem; display:flex; align-items:center; justify-content:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+    </header>
+
+    <!-- Main -->
+    <main class="public-main">
+      <div class="public-grid">
+        <!-- Hero -->
+        <div class="public-hero fade-in">
+          <h1 class="hero-title" style="color: #ffffff;">Submit an ICT<br>Service Request</h1>
+          <p class="hero-desc" style="color: rgba(255, 255, 255, 0.9);">
+            Report issues, request assistance, or ask for support from the NEMSU
+            ICT Office. No account needed — just fill out the form.
+          </p>
+          <ul class="hero-list">
+            <li><span class="hero-dot"></span> Digitized FM-OICT-008 Service Request form</li>
+            <li><span class="hero-dot"></span> You'll receive a reference number instantly</li>
+            <li><span class="hero-dot"></span> The ICT team will contact you at the details you provide</li>
+          </ul>
+        </div>
+
+        <!-- Form / Success Card -->
+        <div id="card-area" class="fade-in" style="animation-delay:.1s"></div>
+      </div>
+
+      <p style="margin-top:2.5rem;text-align:center;font-size:.75rem;color:rgba(255,255,255,.65);">
+        Are you ICT staff? <a href="auth.html" style="color:#fff;font-weight:600;text-decoration:underline;">Sign in here</a>.
+      </p>
+    </main>
+  </div>
+
+  <script src="js/supabase.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
